@@ -1,0 +1,27 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="stopwatch.css">
+      <title>ストップウォッチ</title>
+    </head>
+
+    <body>
+      <h3>ストップウォッチ</h3>
+
+      <!-- 時間表示 -->
+      <div class="timer">
+        <span id="hours">0</span>:<span id="minutes">0</span>:<span id="seconds">0</span>:<span id="milliSeconds">0</span>
+      </div>
+
+      <!-- 各種ボタン -->
+      <div class="ContentButton">
+        <button id="Start" type="button" onclick="timeStart();">スタート</button>
+        <button id="Stop" type="button" onclick="timeStop();">ストップ</button>
+        <button id="Reset" type="button" onclick="timeReset();">リセット</button>
+      </div>
+
+      <script src="main.js"></script>
+    </body>
+</html>
