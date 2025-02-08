@@ -73,13 +73,13 @@ $(document).ready(function(){
   });
 
   $("#Stop").click(function() {
-    // ボタン状態変更(Stop/無効 Reset有効)
+    // ボタン状態変更(Stop無効/Reset有効)
     $('#Stop').prop('disabled',true);
     $('#Reset').prop('disabled',false);
   });
 
   $("#Reset").click(function() {
-    //　ボタンを初期状態に更新(Start有効 Stop/Reset無効)
+    //　ボタンを初期状態に更新(Start有効/Stop無効/Reset無効)
     $('#Start').prop('disabled',false);
     $('#Stop').prop('disabled',true);
     $('#Reset').prop('disabled',true);
